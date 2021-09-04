@@ -12,8 +12,6 @@ function App() {
         if (e.target.tagName === "UL") return;
 
         e.parent = e.target.tagName === "LI" ? e.target : e.target.parentElement;
-        console.log(e.target);
-        console.log(e.parent);
         if (e.target.hasAttribute("data-delete-btn")) return deleteTodo(e);
         let todo = todos.find((todo) => todo.id === parseInt(e.parent.getAttribute("data-id")));
         todo.complete = !todo.complete;
