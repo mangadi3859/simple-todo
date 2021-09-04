@@ -1,0 +1,31 @@
+.todo {
+    margin-top: 0.8rem;
+    padding-bottom: 0.4rem;
+    display: flex;
+    width: 100%;
+    font-size: 1.2rem;
+    list-style: circle;
+    cursor: pointer;
+    border-bottom: 2px solid var(--bs-gray-400);
+}
+
+.todo-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: text-decoration, opacity, font-weight 0.5s ease;
+}
+
+.todo-btn-delete {
+    margin-right: 0.5rem;
+    margin-left: auto;
+    transition: display 0.5s ease;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.todo-name.todo-complete {
+    text-decoration: line-through;
+    font-weight: 700;
+    opacity: 0.65;
+}
