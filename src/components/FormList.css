@@ -50,15 +50,6 @@
 @media (max-width: 700px) {
     .btn-submit,
     .btn-clear {
-        font-size: 0.9rem;
-    }
-
-    .btn-clear {
-        display: block;
-        font-size: 0.9rem;
-    }
-
-    .btn-clear::before {
-        content: "\A";
+        font-size: 0.8rem;
     }
 }
